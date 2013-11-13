@@ -16,5 +16,10 @@
     <author href="https://build.phonegap.com" email="andres.calderonbecerra@gmail.com">
        Andrés Calderon 
     </author>
+    
+    <icon src"icons/ldpi.svg" gap:platform="android" gap:density="ldpi"/> 
+    <icon src"icons/mdpi.svg" gap:platform="android" gap:density="mdpi"/> 
+    <icon src"icons/hdpi.svg" gap:platform="android" gap:density="hdpi"/> 
+    <icon src"icons/xhdpi.svg" gap:platform="android" gap:density="xhdpi"/> 
 
 </widget>

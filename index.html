@@ -1,0 +1,2048 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Pocket chef</title>
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="themes/naranja.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="inicio">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            Pocket Chef
+        </h3>
+    </div>
+    <div data-role="content">
+        <a data-role="button" data-transition="slide" href="#recetar">
+            Recetas
+        </a>
+         <a data-role="button" data-transition="slide"  href="#especiales">
+            Especiales
+        </a>
+        
+        <a data-role="button" href="#page1">
+            Favoritos
+        </a>
+       
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+                
+               
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="especiales">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    
+   <a href="#inicio" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Recetas del día
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Regiones
+            </li>
+            <li data-theme="c">
+                <a href="#Platillose" data-transition="slide">
+                    Cocina oriental
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#Platillose" data-transition="slide">
+                    Cocina mediterranea
+                </a>
+            </li>
+             <li data-theme="c">
+                <a href="#Platillose" data-transition="slide">
+                    Cocina del pacifico
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#Platillose" data-transition="slide">
+                    Cocina europea
+                </a>
+            </li>
+        </ul>
+        
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Fiesta
+            </li>
+            <li data-theme="c">
+                <a href="#" data-transition="slide">
+                    cocteles
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#" data-transition="slide">
+                    Pasabocas
+                </a>
+            </li>
+             <li data-theme="c">
+                <a href="#" data-transition="slide">
+                    Pasteleria
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#" data-transition="slide">
+                    Comida rapida
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="Platillos">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    
+   <a href="#recetar" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Platillos
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Platillos
+            </li>
+            <li data-theme="c">
+                <a href="#ingredientes" data-transition="slide">
+                    Entrada
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Plato fuerte
+                </a>
+            </li>
+             <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Postre
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Bebida
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="Platillose">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    
+   <a href="#especiales" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Platillos
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Platillos
+            </li>
+            <li data-theme="c">
+                <a href="#ingredientes" data-transition="slide">
+                    Entrada
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Plato fuerte
+                </a>
+            </li>
+             <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Postre
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Bebida
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="dieta">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    
+   <a href="#recetar" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Dieta
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Platillos
+            </li>
+            <li data-theme="c">
+                <a href="#ingredientes" data-transition="slide">
+                    Bajos en grasa
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Bajos en carbohidratos                </a>
+            </li>
+             <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Bajos en sodio
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Bajos en azucar
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    A base de proteina
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="lista">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            Lista de compras
+        </h3>
+    </div>
+    <div data-role="content">
+       <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend>comprar:</legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 1 L de agua.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 1 Cebolla.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 2 zanahorias picadas picada.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- 4 tallos de apio picados.</label>
+        <input type="checkbox" name="checkbox-h-6e" id="checkbox-h-6e">
+        <label for="checkbox-h-6e">- 1 rama de perejil picada.</label>
+        <input type="checkbox" name="checkbox-h-6f" id="checkbox-h-6f">
+        <label for="checkbox-h-6f">- 1  pollo.</label>
+    </fieldset>
+</form>
+       
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+                
+               
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="receta">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Caldo de pollo
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>4 a 6 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/Caldo_de_pollo.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+                
+                <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend></legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 1 L de agua.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 1 Cebolla.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 2 zanahorias picadas picada.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- 4 tallos de apio picados.</label>
+        <input type="checkbox" name="checkbox-h-6e" id="checkbox-h-6e">
+        <label for="checkbox-h-6e">- 1 rama de perejil picada.</label>
+        <input type="checkbox" name="checkbox-h-6f" id="checkbox-h-6f">
+        <label for="checkbox-h-6f">- 1  pollo.</label>
+    </fieldset>
+</form>
+<p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>
+                
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - Remueve las entrañas del pollo y sumergelo en agua.</p>
+                <p> 2 - Agrega la cebolla, las zanahorias, el apio y el perejil. </p>
+                <p> 3 - Agrega sal y pimienta al gusto. </p>
+                <p> 4 - Tapa la olla y ponla a hervir. Reduce el fuego y déjala a fuego lento durante una hora..</p>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="recetar">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    
+   <a href="#inicio" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Recetas
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Recetas por
+            </li>
+            <li data-theme="c">
+                <a href="#ingredientes" data-transition="slide">
+                    Ingredientes
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#dieta" data-transition="slide">
+                    Dieta
+                </a>
+            </li>
+             <li data-theme="c">
+                <a href="#Platillos" data-transition="slide">
+                    Platillos
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Porciones
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="recetadeldia">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    
+   <a href="#inicio" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Recetas del día
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Platillos
+            </li>
+            <li data-theme="c">
+                <a href="#ingredientes" data-transition="slide">
+                    Entrada
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Plato fuerte
+                </a>
+            </li>
+             <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Postre
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Bebida
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="ingredientes">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#recetar" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Ingredientes
+        </h3>
+    </div>
+    
+    <div data-role="content">
+    <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Quieres algo con...">
+    <li><a href="#arroz" data-transition="slide" >Arroz</a></li>
+    <li><a href="#ajo" data-transition="slide" >Ajo</a></li>
+    <li><a href="#apio" data-transition="slide" >Apio</a></li>
+    <li><a href="#carne" data-transition="slide" >Carne</a></li>
+    <li><a href="#canela" data-transition="slide" >Canela</a></li>
+    <li><a href="#cebolla" data-transition="slide" >Cebolla</a></li>
+    <li><a href="#champinon" data-transition="slide" >Champiñones</a></li>
+    <li><a href="#huevos" data-transition="slide" >huevos</a></li>
+    <li><a href="#jamon" data-transition="slide" >Jamón</a></li>
+    <li><a href="#leche" data-transition="slide" >Leche </a></li>
+    <li><a href="#lechuga" data-transition="slide" >Lechuga</a></li>
+    <li><a href="#mora" data-transition="slide" >Mora</a></li>
+    <li><a href="#pan" data-transition="slide" >Pan</a></li>
+    <li><a href="#papa" data-transition="slide" >Papa</a></li>
+    <li><a href="#pasta" data-transition="slide" >Pasta</a></li>
+    <li><a href="#pollo" data-transition="slide" >Pollo</a></li>
+    <li><a href="#queso" data-transition="slide" >Queso</a></li>
+    <li><a href="#tomate" data-transition="slide" >Tomate</a></li>
+    <li><a href="#zanahoria" data-transition="slide" >Zanahoria</a></li>
+</ul>
+</div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="champinon">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Champiñon
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#pastachampinones" data-transition="slide" >Pasta con champiñones</a></li>
+    <li><a href="#pastachampinones" data-transition="slide" >Pizza de pollo con champiñones</a></li>
+    <li><a href="#pastachampinones" data-transition="slide" >Champiñones salteados</a></li>
+    <li><a href="#pastachampinones" data-transition="slide" >Crema de champiñones</a></li>
+    <li><a href="#pastachampinones" data-transition="slide" >Hamburguesa vegetariana</a></li>
+    
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#receta" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="carne">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Carne
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#carneasadaconcebolla" data-transition="slide" >Carne asada con cebolla</a></li>
+    <li><a href="#carneasadaconcebolla" data-transition="slide" >Enpanadas de carne</a></li>
+    <li><a href="#carneasadaconcebolla" data-transition="slide" >Pasta boloñeza</a></li>
+    <li><a href="#carneasadaconcebolla" data-transition="slide" >Albondigas</a></li>
+    <li><a href="#carneasadaconcebolla" data-transition="slide" >Lomo al horno</a></li>
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="papa">
+    <div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Papa
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#puredepapa" data-transition="slide" >Pure de papa</a></li>
+    <li><a href="#puredepapa" data-transition="slide" >Papas a la francesa</a></li>
+    <li><a href="#puredepapa" data-transition="slide" >Dulce de papa</a></li>
+    <li><a href="#puredepapa" data-transition="slide" >Papas horneadas</a></li>
+    <li><a href="#puredepapa" data-transition="slide" >Ñoquis de papa</a></li>
+    
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="lechuga">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Lechuga
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+       <li><a href="#ensaladadelechugaytomate">Ensalada de lechuga y tomate</a></li>
+       <li><a href="#ensaladadelechugaytomate">Enzalada de cebolla</a></li>
+       <li><a href="#ensaladadelechugaytomate">Ensalada de mango y pasas</a></li>
+       <li><a href="#ensaladadelechugaytomate">Ensalada de manzana</a></li>
+       <li><a href="#ensaladadelechugaytomate">Ensalada de yogurt y fresas</a></li>
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="canela">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Canela
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#arrozconleche" data-transition="slide" >Arroz con leche</a></li>
+    <li><a href="#arrozconleche" data-transition="slide" >Canelazo</a></li>
+    <li><a href="#arrozconleche" data-transition="slide" >Rrollo de canela</a></li>
+    <li><a href="#arrozconleche" data-transition="slide" >Chocolate</a></li>
+    
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="arroz">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Arroz
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#arrozconleche" data-transition="slide" >Arroz con leche</a></li>
+     <li><a href="#arrozconleche" data-transition="slide" >Arroz con pollo</a></li>
+      <li><a href="#arrozconleche" data-transition="slide" >Arroz con coco</a></li>
+       <li><a href="#arrozconleche" data-transition="slide" >Arroz atollado</a></li>
+    
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="apio">
+<div data-theme="a" data-role="header" data-position="fixed">    
+<a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+           Apio
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#caldodepollo" data-transition="slide" >Caldo de pollo</a></li>
+    
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="cebolla">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Cebolla
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#caldodepollo" data-transition="slide" >Caldo de pollo</a></li>
+     <li><a href="#carneasadaconcebolla" data-transition="slide" >Carne asada con cebolla</a></li>
+     <li><a href="#carneasadaconcebolla" data-transition="slide" >Aros de cebolla</a></li>
+     <li><a href="#carneasadaconcebolla" data-transition="slide" >Cebollitas caramelizadas</a></li>
+     <li><a href="#carneasadaconcebolla" data-transition="slide" >Enzalada de cebolla</a></li>
+    
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="pollo">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+           Pollo
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+       <li><a href="#caldodepollo" data-transition="slide" >Caldo de pollo</a></li>
+       <li><a href="#caldodepollo" data-transition="slide" >Pollo azado</a></li>
+       <li><a href="#caldodepollo" data-transition="slide" >Nuggets de pollo</a></li>
+       <li><a href="#caldodepollo" data-transition="slide" >Alitas de pollo BBQ</a></li>
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div data-role="page" id="leche">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Leche
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#tostadasfrancesas" data-transition="slide" >Tostadas francesas</a></li>
+    <li><a href="#arrozconleche" data-transition="slide" >Arroz con leche</a></li>
+     <li><a href="#omelettes" data-transition="slide" >Omelette de jamón y queso</a></li>
+     <li><a href="#puredepapa" data-transition="slide" >Pure de papa</a></li>
+    <li><a href="#heladocaserodemora" data-transition="slide" >Helado casero de mora</a></li>
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="huevos">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Huevos
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#tostadasfrancesas" data-transition="slide" >Tostadas francesas</a></li>
+    <li><a href="#omelettes" data-transition="slide" >Omelette de jamón y queso</a></li>
+    <li><a href="#omelettes" data-transition="slide" >Huevos cocidos</a></li>
+    <li><a href="#omelettes" data-transition="slide" >Huevos poché</a></li>
+    
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="pasta">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Pasta
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#pastachampinones" data-transition="slide" >Pasta con champiñones</a></li>
+    <li><a href="#pastachampinones" data-transition="slide" >Pasta boloñeza</a></li>
+    <li><a href="#pastachampinones" data-transition="slide" >Ravioles</a></li>
+    <li><a href="#pastachampinones" data-transition="slide" >Sopa de Pasta</a></li>
+    
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="tomate">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Tomate
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#tomatesasados" data-transition="slide" >Tomates asados</a></li>
+    <li><a href="#ensaladadelechugaytomate" data-transition="slide" >Ensalada de lechuga y tomate</a></li>
+    <li><a href="#tomatesasados" data-transition="slide" >Salsa napolitana</a></li>
+    <li><a href="#ensaladadelechugaytomate" data-transition="slide" >Crema de tomate</a></li>
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="pan">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Pan
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#tostadasfrancesas" data-transition="slide" >Tostadas francesas</a></li>
+    <li><a href="#tomatesasados" data-transition="slide" >Pan de ajo</a></li>
+    <li><a href="#ensaladadelechugaytomate" data-transition="slide" >Queso ala parilla</a></li>
+    <li><a href="#tomatesasados" data-transition="slide" >Pan de fruta</a></li>
+    
+ 
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="ajo">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Ajo
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#tomatesasados" data-transition="slide" >Tomates asados</a></li>
+     <li><a href="#carneasadaconcebolla" data-transition="slide" >Carne asada con cebolla</a></li>
+     <li><a href="#tomatesasados" data-transition="slide" >Pan de ajo</a></li>
+     <li><a href="#tomatesasados" data-transition="slide" >Dip de ajo</a></li>
+   
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="jamon">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Jamón
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#omelettes" data-transition="slide" >Omelette de jamón y queso</a></li>
+    <li><a href="#tomatesasados" data-transition="slide" >Jamón ahumado</a></li>
+    <li><a href="#tomatesasados" data-transition="slide" >Tabla de carnes</a></li>
+    <li><a href="#tomatesasados" data-transition="slide" >Crep de jamón y queso</a></li>
+   
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="queso">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+           Queso
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+    <li><a href="#omelettes" data-transition="slide" >Omelette de jamón y queso</a></li>
+        <li><a href="#heladocaserodemora" data-transition="slide" >Helado casero de mora</a></li>
+        <li><a href="#tomatesasados" data-transition="slide" >Crep de jamón y queso</a></li>
+            <li><a href="#ensaladadelechugaytomate" data-transition="slide" >Queso ala parilla</a></li>
+
+        
+   
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="mora">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+           Mora
+        </h3>
+    </div>
+    <div data-role="content">
+       <ul data-role="listview" data-inset="true">
+        <li><a href="#heladocaserodemora" data-transition="slide" >Helado casero de mora</a></li>
+        <li><a href="#heladocaserodemora" data-transition="slide" >Jugo de mora</a></li>
+        <li><a href="#heladocaserodemora" data-transition="slide" >Esponjado casero de mora</a></li>
+        <li><a href="#heladocaserodemora" data-transition="slide" >Dulce de mora</a></li>
+   
+</ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+               <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="pastachampinones">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Pasta con champiñones
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>2 a 4 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/pasta_champiñones.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+               
+                 <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend> </legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 1/2 Lb de champiñones.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 150 ml de crema.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 125 g de pastaa.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- sal.</label>
+    </fieldset>
+</form>
+                <p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - Cocina los hongos en un sartén a temperatura alta media con 2 cucharadas de mantequilla o aceite de oliva. Cocina hasta que el líquido se haya evaporado y los hongos estén suaves y dorados.</p>
+                <p>2 - Agrega (100 ml) de crema fresca. </p>
+                <p>3 - Añade sal y pimienta al gusto.</p>
+                <p>4 - Agrega la mescla a la pasta cocida</p>
+                
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="tomatesasados">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Tomates asados
+        </h3>
+    </div>
+    <div data-role="content">
+        
+        <h4>1 a 2 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/tomate_asado.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+                
+                 <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend>* a/g = al gusto </legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 4 Tomates.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- Aceite.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">-a/g Aalbaca.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">-a/g Ajo.</label>
+    </fieldset>
+</form>
+<p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                
+                <p> 1 - Mezcla el ajo picado con el aceite y deja que descanse a un lado para que tomen el sabor de los dos.</p>
+                <p> 2 - Mientras tanto, corta los tomates en trozos como quieras. Pueden ser rodajas o tiras. Busca una bandeja para el horno, ponle papel pergamino y cada uno de los trozos de tomates sin que queden encima de los otros.</p>
+                <p> 3 - Agrega todo el aceite con ajo que dejaste antes. Agrega sal y pimienta encima de cada uno y las especies que escogiste también.</p>
+                <p>4 - Mete al horno a 175°C por unos 15 minutos o hasta que estén tiernos y tostados.</p>
+                
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="tostadasfrancesas">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Tostadas francesas
+        </h3>
+    </div>
+    <div data-role="content">
+        
+        <h4>1 a 2 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/tostadas_francesas.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+                 
+               
+                 <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend></legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 4 rebanadas de pan.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 250 cc de leche.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 2 Huevos.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- 100 g de azúcar.</label>
+    </fieldset>
+</form>
+<p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                
+                <p> 1 - Tostar apenas de un lado y del otro las rebanadas de pan.</p>
+                <p> 2 - Remojarlas unos segundos en la leche, luego pasarlas por huevo y llevarlas a la sartén caliente con manteca.</p>
+                <p> 3 - Dejar que cuaje el huevo de ambos lados.</p>
+                <p>4 - Retirar y pasar por la mezcla de azúcar y sal. Servir y acompañar si se prefiere con miel y mermelada.</p>
+                
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="caldodepollo">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Caldo de pollo
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>4 a 6 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/Caldo_de_pollo.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+                
+                <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend></legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 1 L de agua.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 1 Cebolla.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 2 zanahorias picadas picada.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- 4 tallos de apio picados.</label>
+        <input type="checkbox" name="checkbox-h-6e" id="checkbox-h-6e">
+        <label for="checkbox-h-6e">- 1 rama de perejil picada.</label>
+        <input type="checkbox" name="checkbox-h-6f" id="checkbox-h-6f">
+        <label for="checkbox-h-6f">- 1  pollo.</label>
+    </fieldset>
+</form>
+<p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>
+                
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - Remueve las entrañas del pollo y sumergelo en agua.</p>
+                <p> 2 - Agrega la cebolla, las zanahorias, el apio y el perejil. </p>
+                <p> 3 - Agrega sal y pimienta al gusto. </p>
+                <p> 4 - Tapa la olla y ponla a hervir. Reduce el fuego y déjala a fuego lento durante una hora..</p>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="arrozconleche">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Arroz con leche
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>4 a 6 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/arroz_con_leche.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+              
+                 <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend></legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 1 L de leche.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 250 g de arroz.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 100 g de azúcar.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- 1 canela en rama.</label>
+        <input type="checkbox" name="checkbox-h-6e" id="checkbox-h-6e">
+        <label for="checkbox-h-6e">- 2 cucharadas de canela en polvo.</label>
+    </fieldset>
+</form>
+ <p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>              
+                
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - Pon en una holla al fuego con abundante agua y cuando comience a hervir echa el arroz. Déjalo 10 minutos y apaga el fuego.</p>
+                <p> 2 - En otroa holla pon a fuego lento la leche y el azúcar dándole vueltas para que se disuelva. Cuando la leche comience a hervir, añádele el arroz escurrido, el azúcar y la canela en rama. </p>
+                <p> 3 - Déjalo hervir suavemente durante 15 minutos después de los cuales lo echarás a una fuente plana, y lo espolvorearas con la canela molida. </p>
+                
+                
+                
+          </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="ensaladadelechugaytomate">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Ensalada de lechuga y tomate
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>2 a 4 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/ensalada_L.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+                
+                <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend></legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 1/2 Lechuga.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 2 tomates.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 100 cc de vinagre.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- 50 cc de aceite de oliva.</label>
+    </fieldset>
+</form>
+ <p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>               
+                
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - Lavar la lechuga y los tomates, desinfectarlos previamente.</p>
+                <p> 2 - Cortar la lechuga y el tomate al gusto. </p>
+                <p> 3 - Condimentar con vinagre y aceite de oliva. </p>
+                <p> 4 - Agregar sal y pimienta al gusto. </p>
+                
+                
+          </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="omelettes">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Omelette de jamón y queso
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>1 a 3 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/Omelette.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+                
+                   <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend>* a/g = al gusto </legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 4 huevos.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 150 cc de leche.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- * a/g Jamón.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- * a/g Queso.</label>
+    </fieldset>
+</form>
+                
+ <p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>               
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - se comienza con huevos batidos conb leche en un bol.</p>
+                <p> 2 - Deja reposar los huevos sobre la sartén caliente para que se cocinen; cuando se comienzan a cuajar, dalos vuelta para que el líquido que queda se caliente. </p>
+                <p> 3 - Agregar en el centro el jamón y el queso. </p>
+                <p> 4 - Cerrar el omelet con un dobles por la mitad. </p>
+                
+                
+          </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="puredepapa">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Pure de papa
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>2 a 4 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/pure_p.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+                <p><h4>* a/g = al gusto </h4></p>
+           
+                <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend> </legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 5 papas.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 350 cc de leche.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 100 g de mantequilla</label>
+    </fieldset>
+</form>
+<p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>                
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - Pela las papas bajo el agua corriente y corta cada una en tres partes. Colócalas en una cacerola grande y pon agua suficiente para cubrir las papas. Asegúrate de que tienen espacio para moverse en la cacerola. Añade aproximadamente 1 cucharada de aceite de oliva al agua.</p>
+                <p> 2 - Lleva a ebullición a fuego alto y luego baja el fuego a medio y continúa cocinando, revolviendo ocasionalmente, durante unos 30 minutos, o hasta que las papas estén blandas al pincharlas con un tenedor. </p>
+                <p> 3 - Retira del fuego y escurre el exceso de agua. Deja las papas en la olla. </p>
+                <p> 4 - Añade poco a poco el resto  la mantequilla, la leche mientras se aplastan las papas. </p>
+                <p> 5 - Condimentar y servir. </p>
+                
+          </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="carneasadaconcebolla">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+             Carne asada con cebolla
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>1 a 2 porciones - 15 a 20 min.</h4>
+        
+            <img src="img/carne_a.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+               
+                              
+                  <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend></legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- Corte de carne a su elección.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 3 dientes de ajo.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 1 cebolla en aros.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- Especias al gusto.</label>
+    </fieldset>
+</form>
+<p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>                
+                
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - Sasonar el corte de carne con el ajo, especias al gusto y la cebolla antes de la cocción.</p>
+                <p> 2 - Llevar el corte a coción sobre un sarten caliente con aseite. </p>
+                <p> 3 - Retira del fuego cuando el corte este completamente cocido, se puede comprobar por su color en  el interioir (entre menos rosa este el centro del corte mas cerca esta de la cocción completa). </p>
+                <p> 4 - Acompañar el corte con las cebollas que se sasono. </p>
+                
+                
+          </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="heladocaserodemora">
+<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#ingredientes" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="e" data-inline="true" data-transition="slide" >Arrow left</a>
+        <h3>
+            Helado casero de mora
+        </h3>
+    </div>
+    <div data-role="content">
+       
+         <h4>2 a 4 porciones - 4 h.</h4>
+        
+            <img src="img/helado_m.jpg" alt="image" style="width:75%">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Ingredientes
+                </h3>
+               
+                                
+                
+                <form>
+    <fieldset data-role="controlgroup" data-iconpos="right">
+        <legend></legend>
+        <input type="checkbox" name="checkbox-h-6a" id="checkbox-h-6a">
+        <label for="checkbox-h-6a">- 300 gr moras.</label>
+        <input type="checkbox" name="checkbox-h-6b" id="checkbox-h-6b">
+        <label for="checkbox-h-6b">- 100 gr azúcar.</label>
+        <input type="checkbox" name="checkbox-h-6c" id="checkbox-h-6c">
+        <label for="checkbox-h-6c">- 350 gr queso cremoso.</label>
+        <input type="checkbox" name="checkbox-h-6d" id="checkbox-h-6d">
+        <label for="checkbox-h-6d">- 100 ml leche</label>
+    </fieldset>
+</form>
+<p><a href="#" data-role="button" data-inline="true">Agregar a la lista</a></p>                
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Proceso
+                </h3>
+                   <p> 1 - Poner en un bol las moras con el azúcar y batir con la batidora de mano hasta que se forme una crema.</p>
+                <p> 2 - Añadir el queso cremoso y la leche y seguir batiendo con la batidora cambiando al accesorio de varillas. </p>
+                <p> 3 - Tamizar en un colador . </p>
+                <p> 4 - Pasar a un molde (mejor de acero)y meter al congelador al menos 4h. </p>
+                
+                
+          </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#inicio" data-transition="slide" data-theme="a" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                 <li>
+                    <a href="#lista" data-transition="slide" data-theme="" data-icon="bars">
+                        lista de compras
+                    </a>
+                </li>
+                <li>
+                    <a href="#recetadeldia" data-transition="slide" data-theme="" data-icon="arrow-l">
+                        Recetas del día
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
